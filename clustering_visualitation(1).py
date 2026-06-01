@@ -27,6 +27,7 @@ st.title("📊 Prediksi Cluster Wilayah Kemiskinan")
 
 st.markdown("""
 Aplikasi ini digunakan untuk mengelompokkan kabupaten/kota berdasarkan karakteristik sosial ekonomi menggunakan algoritma **K-Means Clustering**.
+Berdasarkan data tahun 2024 yang bersumber dari Badan Pusat Statistik (BPS).
 
 ### Interpretasi Cluster
 🔴 **Cluster 0** → Wilayah Rentan Kemiskinan
