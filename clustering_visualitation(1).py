@@ -2,26 +2,14 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-# =====================================
-# PAGE CONFIG
-# =====================================
-
 st.set_page_config(
     page_title="Prediksi Cluster Kemiskinan",
     page_icon="📊",
     layout="wide"
 )
 
-# =====================================
-# LOAD DATA & MODEL
-# =====================================
-
 df = pd.read_csv("Data_Tingkat_Kemiskinan.csv")
 model = joblib.load("clustering_kemiskinan.pkl")
-
-# =====================================
-# HEADER
-# =====================================
 
 st.title("📊 Prediksi Cluster Wilayah Kemiskinan")
 
@@ -34,10 +22,6 @@ Aplikasi ini digunakan untuk mengelompokkan kabupaten/kota berdasarkan karakteri
 🟢 **Cluster 1** → Wilayah Relatif Sejahtera
 """)
 
-# =====================================
-# SIDEBAR
-# =====================================
-
 st.sidebar.header("Input Data Wilayah")
 
 daftar_wilayah = sorted(df["Kabupaten_Kota"].unique())
@@ -47,17 +31,9 @@ wilayah = st.sidebar.selectbox(
     daftar_wilayah
 )
 
-# =====================================
-# DATA DEFAULT
-# =====================================
-
 data_default = df[
     df["Kabupaten_Kota"] == wilayah
 ].iloc[0]
-
-# =====================================
-# INPUT FITUR
-# =====================================
 
 rls = st.sidebar.number_input(
     "Rata-rata Lama Sekolah",
@@ -95,10 +71,6 @@ rokok = st.sidebar.number_input(
 )
 
 prediksi = st.sidebar.button("🔍 Prediksi Cluster")
-
-# =====================================
-# PREDIKSI
-# =====================================
 
 if prediksi:
 
