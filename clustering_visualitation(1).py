@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 df = pd.read_csv("Data_Tingkat_Kemiskinan.csv")
-model = joblib.load(kmeans_manual, "clustering_kemiskinan (5).pkl")
+model = joblib.load("clustering_kemiskinan.pkl")
 
 st.title("Prediksi Cluster Wilayah Kemiskinan")
 
