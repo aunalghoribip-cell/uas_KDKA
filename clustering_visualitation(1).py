@@ -17,9 +17,9 @@ st.markdown("""
 Aplikasi ini digunakan untuk mengelompokkan kabupaten/kota berdasarkan karakteristik sosial ekonomi di Indonesia tahun 2024 yang bersumber dari Badan Pusat Statistik (BPS) menggunakan algoritma **K-Means Clustering**.
 
 ### Interpretasi Cluster
-🔴 **Cluster 0** → Wilayah Rentan Kemiskinan
+🟢 **Cluster 0** → Wilayah Relatif Sejahtera 
 
-🟢 **Cluster 1** → Wilayah Relatif Sejahtera
+🔴 **Cluster 1** → Wilayah Rentan Kemiskinan
 """)
 
 st.sidebar.header("Input Data Wilayah")
