@@ -11,7 +11,7 @@ st.set_page_config(
 df = pd.read_csv("Data_Tingkat_Kemiskinan.csv")
 model = joblib.load("clustering_kemiskinan.pkl")
 
-st.title("📊 Prediksi Cluster Wilayah Kemiskinan")
+st.title("Prediksi Cluster Wilayah Kemiskinan")
 
 st.markdown("""
 Aplikasi ini digunakan untuk mengelompokkan kabupaten/kota berdasarkan karakteristik sosial ekonomi di Indonesia tahun 2024 yang bersumber dari Badan Pusat Statistik (BPS) menggunakan algoritma **K-Means Clustering**.
