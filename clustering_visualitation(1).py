@@ -125,17 +125,7 @@ if prediksi:
         st.markdown("""
         ### Interpretasi
 
-        Wilayah ini memiliki karakteristik yang lebih rentan terhadap kemiskinan.
-
-        Beberapa indikator sosial ekonomi masih memerlukan perhatian lebih, seperti:
-
-        - Pendidikan masyarakat
-        - Tingkat kesejahteraan ekonomi
-        - Kesehatan masyarakat
-        - Kualitas pembangunan wilayah
-
-        Hasil ini menunjukkan bahwa wilayah tersebut memiliki karakteristik yang mirip dengan kelompok wilayah yang relatif lebih rentan.
-        """)
+        Wilayah ini memiliki karakteristik yang lebih rentan terhadap kemiskinan.""")
 
     elif hasil == 1:
 
