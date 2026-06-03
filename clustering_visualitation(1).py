@@ -118,10 +118,6 @@ if prediksi:
 
     st.markdown("---")
 
-    # =====================================
-    # INTERPRETASI
-    # =====================================
-
     if hasil == 0:
 
         st.error("🔴 Cluster 0 - Wilayah Rentan Kemiskinan")
@@ -154,10 +150,6 @@ if prediksi:
 
         Hasil ini menunjukkan bahwa wilayah tersebut memiliki karakteristik yang mirip dengan kelompok wilayah yang relatif lebih sejahtera.
         """)
-
-    # =====================================
-    # RINGKASAN INPUT
-    # =====================================
 
     st.markdown("---")
 
